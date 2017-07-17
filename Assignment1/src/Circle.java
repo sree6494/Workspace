@@ -1,17 +1,30 @@
+import java.lang.Math;
 
 public class Circle {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	double val;
+	double area;
+	int c;
 
-		CirArea c1=new CirArea(1,5.0);
-		CirArea c2=new CirArea(2,10.0);
-		
-		c1.area();
-		c2.area();
-		
+	public Circle(int c, double val) {
 
+		this.val = val;
+		this.c = c;
+
+	}
+
+	public void area() {
+		// if c==1 implies radius
+		if (c == 1) {
+			area = Math.PI * Math.pow(val, 2);
+			System.out.println("Area of the circle with Radius " + this.val + " is " + this.area);
+		}
+
+		// if c==2 implies diameter
+		else if (c == 2) {
+			area = Math.PI * (Math.pow(val, 2)) / 4;
+			System.out.println("Area of the circle with Diameter " + this.val + " is " + this.area);
+		}
 	}
 
 }

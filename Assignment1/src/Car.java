@@ -1,15 +1,13 @@
 
 public class Car {
-	
+
 	int year;
 	String make;
 	String model;
 	int mielage;
 	int doors;
 	String titleStatus;
-	
-	
-	
+
 	public Car(int year, String make, String model, int mielage, int doors, String titleStatus) {
 		super();
 		this.year = year;
@@ -19,9 +17,10 @@ public class Car {
 		this.doors = doors;
 		this.titleStatus = titleStatus;
 	}
-	
-	public void print() {
-		System.out.println(this.year+ " " +this.make+ " " +this.model+ ", " +this.mielage+ " miles, " +this.doors+ " doors, " +this.titleStatus+ " title");
+
+	public void printDetails() {
+		System.out.println(this.year + " " + this.make + " " + this.model + ", " + this.mielage + " miles, "
+				+ this.doors + " doors, " + this.titleStatus + " title");
 	}
 
 }
